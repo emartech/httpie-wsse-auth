@@ -1,10 +1,13 @@
 httpie-wsse-auth
 ================
 
-This `HTTPie <https://github.com/jkbr/httpie>`_ auth plugin implements WSSE authentication.
+This `HTTPie <http://httpie.org/>`_ auth plugin implements Escher authentication
+for Emarsys API requests.
 
 Installation
 ------------
+
+Be sure that 'HTTPie <http://httpie.org/>`_ is installed, and install this plugin:
 
 .. code-block:: bash
 
@@ -18,4 +21,7 @@ Example
 
 .. code-block:: bash
 
-   $ http --auth-type=wsse-auth --auth='access_id:secret_key' example.org
+   $ http --auth-type=wsse-auth --auth='access_id:secret_key' https://api.emarsys.net/api/v2/settings
+
+Check out `HTTPie sessions <https://github.com/jkbrzt/httpie#sessions>`_ if you would like to
+save authentication information between your requests.
