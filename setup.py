@@ -8,7 +8,7 @@ setup(
     name='httpie-wsse-auth',
     description='WsseAuth plugin for HTTPie.',
     long_description=open('README.rst').read().strip(),
-    version='0.1.0',
+    version='0.1.1',
     author='Andras Barthazi',
     author_email='andras@barthazi.hu',
     license='MIT',
@@ -25,7 +25,7 @@ setup(
         'httpie>=0.7.0'
     ],
     classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 4 - Beta',
         'Environment :: Console',
         'Programming Language :: Python',
         'Intended Audience :: Developers',

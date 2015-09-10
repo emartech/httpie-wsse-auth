@@ -23,7 +23,7 @@ class WsseAuth:
         sha1 = hashlib.sha1(string).hexdigest()
         digest = base64.encodestring(sha1).rstrip()
 
-        r.headers['X-WSSE'] = 'Username="%s", PasswordDigest="%s", Nonce="%s", Created="%s"' % (self.access_id, digest, nonce, timestamp)
+        r.headers['X-WSSE'] = 'UsernameToken Username="%s", PasswordDigest="%s", Nonce="%s", Created="%s"' % (self.access_id, digest, nonce, timestamp)
         return r
 
 class WsseAuthPlugin(AuthPlugin):
